@@ -1,24 +1,15 @@
 # cc-secretary
 
-Claude Code 用のパーソナル秘書スキル。
+Claude Code 用のパーソナル秘書プラグイン。
 
 `/secretary` を実行すると、対話的にあなたの役割・日常・ニーズをヒアリングし、Markdownベースの管理フォルダを自動生成します。
 
 ## インストール
 
-### 1. マーケットプレイスに追加
-
 ```
 /plugin marketplace add Shin-sibainu/cc-secretary
+/plugin install secretary@cc-secretary
 ```
-
-### 2. プラグインをインストール
-
-```
-/plugin install secretary@Shin-sibainu
-```
-
-これだけで `/secretary` スキルが使えるようになります。
 
 ## できること
 
@@ -111,13 +102,17 @@ Claude Code 用のパーソナル秘書スキル。
 ```
 cc-secretary/
 ├── .claude-plugin/
-│   └── plugin.json               # プラグインメタデータ
-├── skills/
+│   └── marketplace.json              # マーケットプレイスカタログ
+├── plugins/
 │   └── secretary/
-│       ├── SKILL.md              # メインスキル定義
-│       └── references/
-│           ├── templates.md      # カテゴリ別Markdownテンプレート集
-│           └── claude-md-template.md  # CLAUDE.md 生成テンプレート
+│       ├── .claude-plugin/
+│       │   └── plugin.json           # プラグインマニフェスト
+│       └── skills/
+│           └── secretary/
+│               ├── SKILL.md          # メインスキル定義
+│               └── references/
+│                   ├── templates.md  # カテゴリ別テンプレート集
+│                   └── claude-md-template.md
 ├── README.md
 └── LICENSE
 ```
