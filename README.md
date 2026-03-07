@@ -9,13 +9,13 @@ Claude Code 用のパーソナル秘書スキル。
 ### 1. マーケットプレイスに追加
 
 ```
-/plugin marketplace add yourname/cc-secretary
+/plugin marketplace add Shin-sibainu/cc-secretary
 ```
 
 ### 2. プラグインをインストール
 
 ```
-/plugin install secretary@yourname
+/plugin install secretary@Shin-sibainu
 ```
 
 これだけで `/secretary` スキルが使えるようになります。
