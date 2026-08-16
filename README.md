@@ -107,6 +107,8 @@ cc-secretary/
 │   └── secretary/
 │       ├── .claude-plugin/
 │       │   └── plugin.json           # プラグインマニフェスト
+│       ├── commands/
+│       │   └── secretary.md          # /secretary コマンド定義
 │       └── skills/
 │           └── secretary/
 │               ├── SKILL.md          # メインスキル定義
